@@ -7,6 +7,19 @@
   --logo: #172033;
   --logo_span: #4f6df5;
   --button_active: #014576;
+  --header_border: #e5e9f2;
+  --button_color: #4f6df5;
+  --button_light_bg: #eef1ff;
+  --button_light_c: #4057ca;
+  --button_white_c: #3349bd;
+  --hero_bg: #f5f7ff;
+  --hero_text_c: #59647a;
+  --card_border: #dfe4ef;
+  --program_c: #f8f9fc;
+  --program_img: #e9edff;
+  --program_item_b: #dde2ef;
+  --footer_bg: #172033;
+  --footer_c: #cbd2df;
 }
 
 * {
@@ -49,8 +62,8 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #e5e9f2;
-  background-color: #ffffff;
+  border-bottom: 1px solid var(--header_border);
+  background-color: var(--bg_white);
 }
 .header__inner {
   height: 84px;
@@ -112,8 +125,8 @@ a {
   display: inline-block;
   padding: 16px 26px;
   border-radius: 10px;
-  background-color: #4f6df5;
-  color: #ffffff;
+  background-color: var(--button_color);
+  color: var(--bg_white);
   font-weight: 700;
   text-align: center;
 }
@@ -137,8 +150,8 @@ a {
 }
 
 .button--light {
-  background-color: #eef1ff;
-  color: #4057ca;
+  background-color: var(--button_light_bg);
+  color: var(--button_light_c);
 }
 
 .button--light:hover {
@@ -158,8 +171,8 @@ a {
 }
 
 .button--white {
-  background-color: #ffffff;
-  color: #3349bd;
+  background-color: var(--bg_white);
+  color: var(--button_white_c);
 }
 
 .button--white:hover {
@@ -171,7 +184,7 @@ a {
 }
 
 .hero {
-  background-color: #f5f7ff;
+  background-color: var(--hero_bg);
   padding: 76px 0;
 }
 .hero__inner {
@@ -200,7 +213,7 @@ a {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: #4f6df5;
+  color: var(--logo_span);
   font-size: 15px;
   font-weight: 800;
   text-transform: uppercase;
@@ -225,7 +238,7 @@ h1 {
   margin: 24px 0 30px;
   font-size: 20px;
   line-height: 1.6;
-  color: #59647a;
+  color: var(--hero_text_c);
 }
 .hero__actions {
   display: flex;
@@ -274,7 +287,7 @@ h1 {
 .card {
   width: 377px;
   padding: 30px;
-  border: 1px solid #dfe4ef;
+  border: 1px solid var(--card_border);
   border-radius: 16px;
   background-color: #ffffff;
 }
@@ -301,7 +314,7 @@ h1 {
 }
 .program {
   padding: 78px 0;
-  background-color: #f8f9fc;
+  background-color: var(--program_c);
 }
 .program__inner {
   display: flex;
@@ -319,7 +332,7 @@ h1 {
   width: 520px;
   padding: 34px;
   border-radius: 20px;
-  background-color: #e9edff;
+  background-color: var(--program_img);
 }
 
 @media (max-width: 1024px) {
@@ -364,9 +377,9 @@ h1 {
   align-items: center;
   gap: 16px;
   padding: 17px 18px;
-  border: 1px solid #dde2ef;
+  border: 1px solid var(--program_item_b);
   border-radius: 12px;
-  background-color: #ffffff;
+  background-color: var(--bg_white);
 }
 .program__item strong {
   color: #4f6df5;
@@ -382,8 +395,8 @@ h1 {
   gap: 60px;
   padding: 42px 48px;
   border-radius: 20px;
-  background-color: #4f6df5;
-  color: #ffffff;
+  background-color: var(--logo_span);
+  color: var(--bg_white);
 }
 .signup__box .eyebrow {
   color: #dfe5ff;
@@ -406,8 +419,8 @@ h1 {
 
 .footer {
   padding: 46px 0;
-  background-color: #172033;
-  color: #cbd2df;
+  background-color: var(--footer_bg);
+  color: var(--footer_c);
 }
 .footer__inner {
   display: flex;
@@ -415,7 +428,7 @@ h1 {
   gap: 80px;
 }
 .logo--footer {
-  color: #ffffff;
+  color: var(--bg_white);
 }
 .footer p {
   width: 320px;
@@ -443,7 +456,7 @@ h1 {
 }
 
 .footer__contacts strong {
-  color: #ffffff;
+  color: var(--bg_white);
   margin-bottom: 4px;
 }
 /* Урок 6: адаптивные стили намеренно отсутствуют. */
